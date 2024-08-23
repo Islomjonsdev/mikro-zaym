@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="footer_top_left">
               {footerTopData?.map((item, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <Link href={"/"}>{item?.number}</Link>
                     <p>{item?.email}</p>
                   </div>
