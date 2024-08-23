@@ -29,6 +29,14 @@
       }
     }
 
+    .telegram {
+      &:hover {
+        path {
+          fill: $darkBlue;
+        }
+      }
+    }
+
     .facebook {
       &:hover {
         path {

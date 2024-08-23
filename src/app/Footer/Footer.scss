@@ -14,7 +14,7 @@
     .footer_top {
       display: flex;
       gap: 211px;
-      border-bottom: 1px solid #EBEBEB;
+      border-bottom: 1px solid #ebebeb;
       padding-bottom: 50px;
       .footer_top_left {
         max-width: 276px;
@@ -73,3 +73,37 @@
     }
   }
 }
+
+@media only screen and (max-width: 1490px) {
+  .footer {
+    background: #f9fafc;
+    padding: 70px 0px 30px 0px;
+    .footer_blog {
+      .footer_top {
+        gap: 150px;
+
+        .footer_top_right {
+          display: flex;
+          gap: 131px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+    .footer {
+      background: #f9fafc;
+      padding: 70px 0px 30px 0px;
+      .footer_blog {
+        .footer_top {
+          gap: 100px;
+  
+          .footer_top_right {
+            display: flex;
+            gap: 101px;
+          }
+        }
+      }
+    }
+  }
