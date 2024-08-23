@@ -1,0 +1,68 @@
+.footer_bottom {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_left {
+  }
+
+  &_left_wrapper {
+    p {
+      color: $grey;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+    }
+  }
+
+  &_left_info {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    margin-bottom: 32px;
+    .instagram {
+      &:hover {
+        path {
+          stroke: $darkBlue;
+        }
+      }
+    }
+
+    .facebook {
+      &:hover {
+        path {
+          fill: $darkBlue;
+        }
+      }
+    }
+  }
+
+  &_right {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    p {
+      color: #020105;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 133.333% */
+    }
+    .apple {
+      &:hover {
+        path {
+          fill: $darkBlue;
+        }
+      }
+    }
+
+    .android {
+      &:hover {
+        path {
+          fill: $darkBlue;
+        }
+      }
+    }
+  }
+}
