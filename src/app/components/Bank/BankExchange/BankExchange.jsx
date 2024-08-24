@@ -48,12 +48,12 @@ const BankExchange = () => {
               <div>
                 <p>Покупка:</p>
                 <span className="bank_exchange_rating">{currency.buyRate}</span>
-                <Image src={currency.buyTrend} width={16} height={16}/>
+                <Image src={currency.buyTrend} width={16} height={16} alt={"buyTrend"}/>
               </div>
               <div>
                 <p>Покупка:</p>
                 <span className="bank_exchange_rating">{currency.buyRate}</span>
-                <Image src={currency.sellTrend} width={16} height={16}/>
+                <Image src={currency.sellTrend} width={16} height={16} alt={"buyTrend"}/>
               </div>
             </li>
           );
