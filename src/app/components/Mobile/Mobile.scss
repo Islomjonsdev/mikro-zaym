@@ -1,3 +1,55 @@
 .mobile {
-    margin-bottom: 380px;
+  margin-bottom: 300px;
+
+  .container {
+    max-width: 1320px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mobile_container {
+    display: flex;
+    justify-content: space-between;
+    .mobile_left {
+      max-width: 631px;
+      width: 100%;
+
+      h3 {
+        color: #262d3a;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 63px; /* 112.5% */
+        margin-bottom: 20px;
+        span {
+          color: $darkGreen;
+        }
+      }
+
+      p {
+        color: #262d3a;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 47px;
+      }
+
+      .play_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+
+    .mobile_right {
+        img {
+            width: 560px;
+            height: 600px;
+        }
+    }
+  }
 }
