@@ -1,0 +1,79 @@
+.bank {
+  margin-bottom: 155px;
+  .container {
+    max-width: 1320px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bank_container {
+      display: flex;
+      gap: 20px;
+    .bank_left {
+      max-width: 630px;
+      width: 100%;
+      background: $white;
+      box-shadow: 0px 24px 54px 0px rgba(0, 104, 174, 0.1);
+      padding: 48px 0px 52px 48px;
+
+      .bakn_left_header {
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 29px;
+        h3 {
+          color: $darkBlue;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 14px;
+        }
+
+        p {
+          color: #172d33;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+        }
+      }
+
+      .bakn_left_body {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 130px;
+
+        span {
+          color: $darkGreen;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        p {
+          color: #262d3a;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      .bakn_left_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 402px;
+          width: 100%;
+          height: 350px;
+        }
+      }
+    }
+  }
+}

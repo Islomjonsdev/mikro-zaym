@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Icons } from "../../SvgIcons/index";
+import { Icons } from "../../../SvgIcons/index";
 import "./FooterBottom.scss";
 
 const FooterBottom = () => {

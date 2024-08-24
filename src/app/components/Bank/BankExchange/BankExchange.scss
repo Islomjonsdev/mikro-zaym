@@ -1,0 +1,53 @@
+.bank_exchange {
+  max-width: 630px;
+  width: 100%;
+  background: $white;
+  box-shadow: 0px 24px 54px 0px rgba(0, 104, 174, 0.1);
+  padding: 48px 48px 52px 48px;
+  .bank_exchange_header {
+    margin-bottom: 47px;
+    h3 {
+      color: $darkBlue;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #9eadd4;
+
+      .bank_exchange_symbol {
+        color: #9eadd4;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      div {
+        p {
+          color: $black;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        .bank_exchange_rating {
+          color: $black;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
