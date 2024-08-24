@@ -11,22 +11,11 @@
     }
     
     .kredit_blog {
+        display: flex;
+        justify-content: space-between;
         .kredit_left {
             max-width: 810px;
             width: 100%;
-            .kredit_header {
-                max-width: 631px;
-                width: 100%;
-                margin-bottom: 44px;
-                
-                h3 {
-                    color: #262d3a;
-                    font-size: 56px;
-                    font-style: normal;
-                    font-weight: 800;
-                    line-height: 63px; /* 112.5% */
-                }
-            }
             
             ul {
                 display: flex;
@@ -45,10 +34,40 @@
                     border-radius: 60px;
                     cursor: pointer;
                 }
-
+                
                 .active {
                     background-color: $darkBlue;
                     color: $white;
+                }
+            }
+        }
+        
+        .kredit_right {
+            background: radial-gradient(109.16% 110.58% at 85.65% 85.42%, #0087E2 0%, #0061A1 100%);
+            max-width: 413px;
+            width: 100%;
+            padding: 68px 0px 0px 47px;
+            
+            div {
+                margin-bottom: 40px;
+                
+                span {
+                    display: block;
+                    color: $white;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    opacity: 0.6;
+                    margin-bottom: 5px;
+                }
+                
+                p {
+                    color: $white;
+                    font-size: 44px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
                 }
             }
         }
