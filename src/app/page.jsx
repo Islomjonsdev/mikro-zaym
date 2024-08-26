@@ -1,4 +1,5 @@
 import Bank from "./components/Bank/Bank";
+import Cards from "./components/Cards/Cards";
 import Hero from "./components/Hero/Hero";
 import Kredit from "./components/Kredit/Kredit";
 import Mobile from "./components/Mobile/Mobile";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
+      <Cards />
       <Kredit />
       <Mobile />
       <News />

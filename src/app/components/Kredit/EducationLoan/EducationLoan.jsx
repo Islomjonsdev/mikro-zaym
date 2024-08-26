@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import React, { useState } from "react";
 import warningIcon from "../../../../../public/svg/warn.svg";
 import "./EducationLoan.scss";
 

@@ -1,0 +1,50 @@
+.cards {
+  margin-bottom: 176px;
+
+  .container {
+    max-width: 1320px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cards_container {
+    .cards_top {
+      max-width: 840px;
+      width: 100%;
+      margin-bottom: 42px;
+
+      h2 {
+        color: #262d3a;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 63px; /* 112.5% */
+        margin-bottom: 16px;
+      }
+
+      div {
+        max-width: 720px;
+        width: 100%;
+        margin-bottom: 24px;
+        p {
+          color: #262d3a;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      a {
+        color: #262d3a;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

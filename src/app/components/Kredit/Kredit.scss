@@ -1,75 +1,79 @@
 .kredit {
-    margin-bottom: 205px;
-    
-    .container {
-        max-width: 1320px;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .kredit_blog {
+  margin-bottom: 205px;
+
+  .container {
+    max-width: 1320px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .kredit_blog {
+    display: flex;
+    justify-content: space-between;
+    .kredit_left {
+      max-width: 810px;
+      width: 100%;
+
+      ul {
         display: flex;
-        justify-content: space-between;
-        .kredit_left {
-            max-width: 810px;
-            width: 100%;
-            
-            ul {
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 10px;
-                margin-bottom: 58px;
-                li {
-                    color: $darkBlue;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    border: 1px solid $darkBlue;
-                    padding: 14px 30px;
-                    border-radius: 60px;
-                    cursor: pointer;
-                }
-                
-                .active {
-                    background-color: $darkBlue;
-                    color: $white;
-                }
-            }
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 58px;
+        li {
+          color: $darkBlue;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border: 1px solid $darkBlue;
+          padding: 14px 30px;
+          border-radius: 60px;
+          cursor: pointer;
         }
-        
-        .kredit_right {
-            background: radial-gradient(109.16% 110.58% at 85.65% 85.42%, #0087E2 0%, #0061A1 100%);
-            max-width: 413px;
-            width: 100%;
-            padding: 68px 0px 0px 47px;
-            
-            div {
-                margin-bottom: 40px;
-                
-                span {
-                    display: block;
-                    color: $white;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    opacity: 0.6;
-                    margin-bottom: 5px;
-                }
-                
-                p {
-                    color: $white;
-                    font-size: 44px;
-                    font-style: normal;
-                    font-weight: 800;
-                    line-height: normal;
-                }
-            }
+
+        .active {
+          background-color: $darkBlue;
+          color: $white;
         }
+      }
     }
+
+    .kredit_right {
+      background: radial-gradient(
+        109.16% 110.58% at 85.65% 85.42%,
+        #0087e2 0%,
+        #0061a1 100%
+      );
+      max-width: 413px;
+      width: 100%;
+      padding: 68px 0px 0px 47px;
+
+      div {
+        margin-bottom: 40px;
+
+        span {
+          display: block;
+          color: $white;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          opacity: 0.6;
+          margin-bottom: 5px;
+        }
+
+        p {
+          color: $white;
+          font-size: 44px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+      }
+    }
+  }
 }
