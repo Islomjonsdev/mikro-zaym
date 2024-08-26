@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import "./Cards.scss";
+import CardsList from "./CardsList/CardsList";
 
 const Cards = () => {
   return (
@@ -21,7 +22,7 @@ const Cards = () => {
             <Link href={"/"}>подробнее</Link>
           </div>
 
-          
+          <CardsList />
         </div>
       </div>
     </section>
