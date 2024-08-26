@@ -70,7 +70,7 @@ const CardsList = () => {
           <h4>{item?.title}</h4>
           <p>{item?.body}</p>
           <div>
-            <Image src={item?.image} alt={"image"}/>
+            <Image src={item?.image} alt={"image"} />
           </div>
         </li>
       ))}

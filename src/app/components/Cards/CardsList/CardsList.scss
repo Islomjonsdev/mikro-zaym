@@ -1,96 +1,95 @@
 .cards_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    li {
-        background: #FFF;
-        box-shadow: 0px 24px 54px 0px rgba(0, 104, 174, 0.10);
-    }
-    
-    .cards_item {
-        grid-column: span 2;
-        padding: 48px 38px 45px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  li {
+    background: #fff;
+    box-shadow: 0px 24px 54px 0px rgba(0, 104, 174, 0.1);
+  }
+
+  .cards_item {
+    grid-column: span 2;
+    padding: 48px 38px 45px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cards_list_left {
+      max-width: 325px;
+      width: 100%;
+
+      h3 {
+        color: $darkBlue;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #262d3a;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 35px;
+      }
+
+      .cards_list_left_span {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
-        .cards_list_left {
-            max-width: 325px;
-            width: 100%;
-            
-            h3 {
-                color: $darkBlue;
-                font-size: 36px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                margin-bottom: 8px;
-            }
-            
-            p {
-                color: #262D3A;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                margin-bottom: 35px;
-            }
-            
-            .cards_list_left_span {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                span {
-                    color: $darkGreen;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    margin-bottom: 2px;
-                }
-                
-                p {
-                    color: #262D3A;
-                    font-size: 13px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-            }
+        span {
+          color: $darkGreen;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 2px;
         }
-        
-        img {
-            width: 188px;
-            height: 193px;
-        }
-        
-    }
-    .cards_item_grid {
-        padding: 28px 8px 0px 28px;
-        h4 {
-            color: $darkBlue;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            margin-bottom: 8px;
-        }
+
         p {
-            color: #262D3A;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            margin-bottom: 14px;
+          color: #262d3a;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
         }
-        div {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            img {
-                // width: 220px;
-                // height: 220px;
-            }
-        }
+      }
     }
+
+    img {
+      width: 188px;
+      height: 193px;
+    }
+  }
+  .cards_item_grid {
+    padding: 28px 8px 0px 28px;
+    h4 {
+      color: $darkBlue;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #262d3a;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 14px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      img {
+        // width: 220px;
+        // height: 220px;
+      }
+    }
+  }
 }
