@@ -1,4 +1,5 @@
 import Bank from "./components/Bank/Bank";
+import Carausel from "./components/Carausel/Carausel";
 import Cards from "./components/Cards/Cards";
 import Hero from "./components/Hero/Hero";
 import Kredit from "./components/Kredit/Kredit";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
+      <Carausel />
       <Cards />
       <Kredit />
       <Mobile />
