@@ -28,7 +28,7 @@ const Header = () => {
                     <Link href={"/"}>для слабовидящих</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Курс валюта</Link>
+                    <Link href={"/langs"}>Курс валюта</Link>
                   </li>
                   <li>
                     <Link href={"/"}>Банкоматы</Link>
