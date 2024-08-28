@@ -53,6 +53,7 @@ const Carausel = () => {
         " Отличная ставка   — как ни крути Автокредит на новое авто или с пробегом",
     },
   ];
+  
   return (
     <section className="carausel">
       <div className="container">
