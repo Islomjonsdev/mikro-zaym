@@ -197,7 +197,7 @@
 
 @media only screen and (max-width: 455px) {
   .bank {
-    margin-bottom: 115px;
+    margin-bottom: 90px;
     .bank_container {
         display: flex;
         flex-direction: column;
@@ -208,6 +208,7 @@
         background: $white;
         box-shadow: 0px 24px 54px 0px rgba(0, 104, 174, 0.1);
         padding: 15px;
+        
         .bakn_left_img {
           img {
             max-width: 350px;
@@ -222,7 +223,6 @@
 
 @media only screen and (max-width: 390px) {
   .bank {
-    margin-bottom: 115px;
     .bank_container {
         display: flex;
         flex-direction: column;
