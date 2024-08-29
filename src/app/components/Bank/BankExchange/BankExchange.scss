@@ -52,3 +52,106 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .bank_exchange {
+    padding: 38px 38px 42px 38px;
+    .bank_exchange_header {
+      margin-bottom: 40px;
+      h3 {
+        font-size: 30px;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 20px;
+        padding-bottom: 17px;
+  
+        .bank_exchange_symbol {
+          font-size: 45px;
+        }
+  
+        div {
+          p {
+            font-size: 12px;
+            margin-bottom: 5px;
+          }
+  
+          .bank_exchange_rating {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bank_exchange {
+    max-width: 800px;
+    width: 100%;
+    padding: 38px 38px 42px 38px;
+    .bank_exchange_header {
+      margin-bottom: 40px;
+      h3 {
+        font-size: 32px;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 20px;
+        padding-bottom: 17px;
+  
+        .bank_exchange_symbol {
+          font-size: 45px;
+        }
+  
+        div {
+          p {
+            font-size: 13px;
+            margin-bottom: 5px;
+          }
+  
+          .bank_exchange_rating {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .bank_exchange {
+    max-width: 800px;
+    width: 100%;
+    padding: 15px;
+    .bank_exchange_header {
+      margin-bottom: 40px;
+      h3 {
+        font-size: 32px;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 20px;
+        padding-bottom: 17px;
+  
+        .bank_exchange_symbol {
+          font-size: 45px;
+        }
+  
+        div {
+          p {
+            font-size: 12px;
+            margin-bottom: 5px;
+          }
+  
+          .bank_exchange_rating {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
