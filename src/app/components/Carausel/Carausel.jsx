@@ -1,8 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import Link from "next/link";
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import leftIcon from "../../../../public/svg/left.svg";
 import rightIcon from "../../../../public/svg/right.svg";
 import "./Carausel.scss";
@@ -82,7 +81,6 @@ const Carausel = () => {
                 <li key={index}>
                   <span>{cardsPersentage}</span>
                   <p>{cardsTitle}</p>
-                  <Link href={"/"}>подробнее</Link>
                 </li>
               );
             })}
