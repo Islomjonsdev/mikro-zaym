@@ -1,13 +1,37 @@
 .online {
+  max-width: 631px;
+  width: 100%;
+  margin-bottom: 44px;
+
+  h3 {
+    color: #262d3a;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 63px; /* 112.5% */
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .online {
     max-width: 631px;
     width: 100%;
-    margin-bottom: 44px;
-    
+    margin-bottom: 34px;
+
     h3 {
-        color: #262D3A;
-        font-size: 56px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 63px; /* 112.5% */
+      font-size: 46px;
+      line-height: 63px; /* 112.5% */
     }
+  }
 }
+
+@media only screen and (max-width: 430px) {
+    .online {
+      margin-bottom: 24px;
+  
+      h3 {
+        font-size: 30px;
+        line-height: 40px; /* 112.5% */
+      }
+    }
+  }

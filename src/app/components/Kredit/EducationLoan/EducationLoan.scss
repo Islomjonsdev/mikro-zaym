@@ -1,69 +1,133 @@
 .education_loan {
-    .education_loan_wrapper {
-        .education_loan_info {
-            display: flex;
-            flex-direction: column;
-            background: #f8fcff;
-            margin-bottom: 20px;
-            padding: 20px 11px;
-            
-            div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 30px;
-                
-                span {
-                    color: $darkBlue;
-                    font-size: 28px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-            }
-            
-            input {
-                margin-bottom: 10px;
-            }
-            
-            input[type="range"] {
-                -webkit-appearance: none;
-                width: 100%;
-                height: 4px;
-                border-radius: 5px;
-                background: $darkBlue;
-                outline: none;
-                transition: opacity .15s ease-in-out;
-            }
-            
-            input[type="range"]::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 30px;
-                height: 30px;
-                border-radius: 100%;
-                border: 3px solid $darkBlue;
-                background: #FFF; 
-                cursor: pointer;
-            }
-        }
-    }
-    
-    .education_loan_warn {
-        max-width: 490px;
-        width: 100%;
-        border-radius: 3px;
-        background: #FFF2AB;
+  .education_loan_wrapper {
+    .education_loan_info {
+      display: flex;
+      flex-direction: column;
+      background: #f8fcff;
+      margin-bottom: 20px;
+      padding: 20px 11px;
+
+      div {
         display: flex;
         align-items: center;
-        gap: 12px;
-        padding: 12px;
-        p {
-            color: #000;
-            font-size: 14px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        span {
+          color: $darkBlue;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      input {
+        margin-bottom: 10px;
+      }
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        background: $darkBlue;
+        outline: none;
+        transition: opacity 0.15s ease-in-out;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        border: 3px solid $darkBlue;
+        background: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .education_loan_warn {
+    max-width: 490px;
+    width: 100%;
+    border-radius: 3px;
+    background: #fff2ab;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    p {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .education_loan {
+    .education_loan_wrapper {
+      .education_loan_info {
+        display: flex;
+        flex-direction: column;
+        background: #f8fcff;
+        margin-bottom: 20px;
+        padding: 20px 11px;
+
+        div {
+          margin-bottom: 20px;
+
+          span {
+            color: $darkBlue;
+            font-size: 25px;
             font-style: normal;
             font-weight: 400;
-            line-height: 20px;
+            line-height: normal;
+          }
         }
+      }
     }
+
+    .education_loan_warn {
+      max-width: 850px;
+      width: 100%;
+      gap: 10px;
+      margin-bottom: 15px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .education_loan {
+    .education_loan_wrapper {
+      .education_loan_info {
+        margin-bottom: 15px;
+        padding: 15px 7px;
+
+        div {
+          margin-bottom: 20px;
+
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .education_loan_warn {
+      margin-bottom: 15px;
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
 }

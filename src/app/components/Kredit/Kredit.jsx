@@ -20,6 +20,7 @@ const Kredit = () => {
 
   const monthlyPayment = 1100000;
   const interest = 100000;
+
   return (
     <section className="kredit">
       <div className="container">
