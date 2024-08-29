@@ -17,7 +17,7 @@
     .carausel_list {
       left: 0;
       display: flex;
-      overflow: auto;
+      overflow: hidden;
       gap: 20px;
       width: 100%;
       margin-bottom: 16px;
@@ -34,6 +34,32 @@
         border: 1px solid $white;
         background: $white;
         box-shadow: 0px 24px 54px 0px rgba(0, 104, 174, 0.06);
+        transition: 0.5s ease;
+
+        &:hover {
+          max-width: 432px;
+          width: 100%;
+          background: #0068ae;
+          box-shadow: 0px 24px 54px 0px rgba(0, 104, 174, 0.06);
+
+          span {
+            color: $white;
+          }
+
+          p {
+            color: $white;
+          }
+
+          a {
+            display: block;
+            color: $white;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-decoration-line: underline;
+          }
+        }
 
         span {
           color: $darkBlue;
@@ -45,14 +71,16 @@
         }
 
         p {
-          color: #0068ae;
+          color: $darkBlue;
           font-size: 22px;
           font-style: normal;
           font-weight: 500;
           line-height: 28px; /* 127.273% */
-          span {
-            color: red;
-          }
+          margin-bottom: 21px;
+        }
+
+        a {
+          display: none;
         }
       }
     }

@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import React, {useRef} from "react";
 import leftIcon from "../../../../public/svg/left.svg";
 import rightIcon from "../../../../public/svg/right.svg";
 import "./Carausel.scss";
@@ -53,27 +56,42 @@ const Carausel = () => {
         " Отличная ставка   — как ни крути Автокредит на новое авто или с пробегом",
     },
   ];
+
+  const carauselListRef = useRef(null);
+
+  const handleScrollLeft = () => {
+    if (carauselListRef.current) {
+      carauselListRef.current.scrollBy({ left: -305, behavior: "smooth" });
+    }
+  };
+
+  const handleScrollRight = () => {
+    if (carauselListRef.current) {
+      carauselListRef.current.scrollBy({ left: 305, behavior: "smooth" });
+    }
+  };
   
   return (
     <section className="carausel">
       <div className="container">
         <div className="carausel_blog">
-          <ul className="carausel_list">
+          <ul className="carausel_list" ref={carauselListRef}>
             {carauselData?.map((cards, index) => {
               const { cardsPersentage, cardsTitle } = cards;
               return (
                 <li key={index}>
                   <span>{cardsPersentage}</span>
                   <p>{cardsTitle}</p>
+                  <Link href={"/"}>подробнее</Link>
                 </li>
               );
             })}
           </ul>
           <div className="carausel_btn_blog">
-            <button>
+            <button onClick={handleScrollLeft}>
               <Image src={leftIcon} alt={"leftIcon"} />
             </button>
-            <button>
+            <button onClick={handleScrollRight}>
               <Image src={rightIcon} alt={"rightIcon"} />
             </button>
           </div>
