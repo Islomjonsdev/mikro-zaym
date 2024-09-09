@@ -11,7 +11,6 @@
     grid-column: span 2;
     padding: 48px 38px 45px 40px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
     .cards_list_left {
@@ -179,15 +178,14 @@
     grid-template-columns: 1fr;
     .cards_item {
       display: flex;
-      align-items: center;
       flex-direction: column;
       grid-column: span 1;
-      padding: 28px 18px 25px 20px;
+      padding: 20px 10px 17px 12px;
   
       .cards_list_left {
         max-width: 325px;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
   
         h3 {
           font-size: 28px;
@@ -197,7 +195,7 @@
   
         p {
           font-size: 14px;
-          margin-bottom: 30px;
+          margin-bottom: 15px;
         }
   
         .cards_list_left_span {
@@ -215,9 +213,9 @@
       }
   
       img {
-        max-width: 188px;
+        max-width: 150px;
         width: 100%;
-        height: 193px;
+        height: 150px;
       }
     }
     .cards_item_grid {
@@ -234,7 +232,7 @@
       }
       div {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         img {
           width: 150px;
