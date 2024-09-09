@@ -1,11 +1,17 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import headerLogo from "../../../../public/svg/headerLogo.svg";
 import "./Header.scss";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
 
 const Header = () => {
+  const [ open, setOPen ] = useState(false)
+  const sasa = () => {
+    setOPen((prev) => !prev)
+  }
   return (
     <header className="header">
       <div className="container">
@@ -34,7 +40,7 @@ const Header = () => {
                     <Link href={"/"}>Банкоматы</Link>
                   </li>
                 </ul>
-                <div>
+                <div onClick={() => sasa(true)}>
                   <p>русский</p>
                 </div>
             </div>
@@ -42,6 +48,9 @@ const Header = () => {
           <HeaderBottom />
         </div>
       </div>
+      {open && (
+        <div>salom</div>
+      )}
     </header>
   );
 };
