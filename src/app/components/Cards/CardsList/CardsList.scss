@@ -180,10 +180,10 @@
       display: flex;
       flex-direction: column;
       grid-column: span 1;
-      padding: 20px 10px 17px 12px;
-  
+      padding: 10px;
+
       .cards_list_left {
-        max-width: 325px;
+        max-width: 500px;
         width: 100%;
         margin-bottom: 15px;
   
@@ -219,7 +219,7 @@
       }
     }
     .cards_item_grid {
-      padding: 20px 8px 0px 20px;
+      padding: 10px;
       h4 {
         font-size: 18px;
         font-weight: 700;
