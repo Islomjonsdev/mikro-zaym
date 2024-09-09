@@ -21,7 +21,6 @@ const Cards = () => {
             </div>
             <Link href={"/"}>подробнее</Link>
           </div>
-
           <CardsList />
         </div>
       </div>
