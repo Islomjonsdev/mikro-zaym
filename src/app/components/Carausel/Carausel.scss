@@ -116,7 +116,17 @@
 
 @media only screen and (max-width: 450px) {
   .carausel {
-    margin-bottom: 380px;
+    margin-bottom: 220px;
+    .container {
+      max-width: 1320px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 0px;
+      padding-right: 20px;
+      position: relative;
+    }
+  
   
     .carausel_blog {
       position: absolute;
