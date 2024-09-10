@@ -16,6 +16,12 @@
         background: none;
         cursor: pointer;
         outline: none;
+
+        button {
+          border: none;
+          background: none;
+          outline: none;
+        }
       }
 
       .header_bottom_left {
@@ -254,7 +260,7 @@
       }
   
       .header_bottom_right {
-        max-width: 330px;
+        max-width: 180px;
         width: 100%;
         div {
           display: flex;
@@ -282,4 +288,8 @@
       }
     }
   }
+}
+
+.header_modal {
+  background-color: $white;
 }
