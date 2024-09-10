@@ -11,7 +11,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <HeaderHero hero={<Hero />}/>
+      <HeaderHero hero={<Hero />} />
       <Carausel />
       <Cards />
       <Kredit />

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import Modal from "../../Modal/Modal";
 import "./HeaderBottom.scss";
 
 const HeaderBottom = () => {
-  const [ openModal, setOpenModal ] = useState(false)
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <div className="header_bottom">
@@ -63,9 +63,7 @@ const HeaderBottom = () => {
       </div>
       {openModal && (
         <Modal close={setOpenModal}>
-            <div className="header_modal">
-                Open Modal
-            </div>
+          <div className="header_modal">Open Modal</div>
         </Modal>
       )}
     </>
