@@ -5,7 +5,7 @@ import "./HeaderHero.scss";
 const HeaderHero = ({ hero }) => {
   return (
     <div className="bg">
-      {/* <Header /> */}
+      <Header />
       {hero}
     </div>
   );

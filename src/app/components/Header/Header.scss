@@ -70,3 +70,144 @@
     }
   }
 }
+
+@media only screen and (max-width: 1110px) {
+  .header {
+    .header_blog {
+      .header_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header_top_left {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .header_top_right {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            li {
+              a {
+                font-size: 18px;
+              }
+            }
+          }
+
+          div {
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding-top: 31px;
+    .header_blog {
+      .header_top {
+
+        .header_top_left {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 100px;
+            height: 43px;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .header_top_right {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            li {
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+
+          div {
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 468px) {
+  .header {
+    padding-top: 31px;
+    .header_blog {
+      .header_top {
+
+        .header_top_left {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 22px;
+
+          img {
+            width: 100px;
+            height: 43px;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .header_top_right {
+          display: none;
+        }
+      }
+    }
+  }
+}
