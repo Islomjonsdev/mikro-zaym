@@ -158,9 +158,7 @@
               display: block;
               color: $white;
               font-size: 20px;
-              font-style: normal;
               font-weight: 500;
-              line-height: normal;
               text-decoration-line: underline;
             }
           }
@@ -179,34 +177,6 @@
   
           a {
             display: none;
-          }
-        }
-      }
-  
-      .carausel_btn_blog {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        button {
-          border: none;
-          width: 42px;
-          height: 42px;
-          border-radius: 50%;
-          background: $white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          fill: #fff;
-          stroke-width: 1px;
-          stroke: #fff;
-          filter: drop-shadow(0px 24px 54px rgba(0, 104, 174, 0.14));
-          padding: 12px;
-          box-shadow: 0px 24px 54px 0px rgba(0, 104, 174, 0.1);
-          cursor: pointer;
-  
-          svg {
-            width: 24px;
-            height: 24px;
           }
         }
       }
