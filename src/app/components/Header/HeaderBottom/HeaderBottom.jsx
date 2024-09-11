@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import burgerIcon from "../../../../../public/svg/burger.svg";
+import { IoMdClose } from "react-icons/io";
 import Modal from "../../Modal/Modal";
 import "./HeaderBottom.scss";
 
@@ -63,7 +64,49 @@ const HeaderBottom = () => {
       </div>
       {openModal && (
         <Modal close={setOpenModal}>
-          <div className="header_modal">Open Modal</div>
+          <div className="header_modal">
+            <div className="header_modal_wrapper">
+              <button onClick={() => setOpenModal(false)}>
+                <IoMdClose />
+              </button>
+            </div>
+            <ul className="header_modal_list">
+              <li>
+                <Link href={"/"}>для меня и семьи</Link>
+              </li>
+              <li>
+                <Link href={"/"}>для бизнеса</Link>
+              </li>
+              <li>
+                <Link href={"/"}>о нас</Link>
+              </li>
+              <li>
+                <Link href={"/"}>медия</Link>
+              </li>
+              <li>
+                <Link href={"/"}>кредиты</Link>
+              </li>
+              <li>
+                <Link href={"/"}>вклады</Link>
+              </li>
+              <li>
+                <Link href={"/"}>мобильное приложение</Link>
+              </li>
+              <li>
+                <Link href={"/"}>карты</Link>
+              </li>
+              <li>
+                <Link href={"/"}>переводы</Link>
+              </li>
+            </ul>
+            <div className="header_modal_bottom">
+              <div>
+                <button className="header_modal_btn">Запольнить анкету</button>
+              </div>
+              <Link href={"/"}>+998 90 123 - 45 - 67</Link>
+              <Link href={"/"}>company@name.com</Link>
+            </div>
+          </div>
         </Modal>
       )}
     </>
