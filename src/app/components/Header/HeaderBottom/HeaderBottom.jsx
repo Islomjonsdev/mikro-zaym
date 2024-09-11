@@ -10,6 +10,9 @@ import "./HeaderBottom.scss";
 
 const HeaderBottom = () => {
   const [openModal, setOpenModal] = useState(false);
+  const handleCloseModal = () => {
+    setOpenModal(false)
+  }
   return (
     <>
       <div className="header_bottom">
@@ -66,37 +69,37 @@ const HeaderBottom = () => {
         <Modal close={setOpenModal}>
           <div className="header_modal">
             <div className="header_modal_wrapper">
-              <button onClick={() => setOpenModal(false)}>
+              <button onClick={handleCloseModal}>
                 <IoMdClose />
               </button>
             </div>
             <ul className="header_modal_list">
               <li>
-                <Link href={"/"}>для меня и семьи</Link>
+                <Link href={"/"} onClick={handleCloseModal}>для меня и семьи</Link>
               </li>
               <li>
-                <Link href={"/"}>для бизнеса</Link>
+                <Link href={"/"} onClick={handleCloseModal}>для бизнеса</Link>
               </li>
               <li>
-                <Link href={"/"}>о нас</Link>
+                <Link href={"/"} onClick={handleCloseModal}>о нас</Link>
               </li>
               <li>
-                <Link href={"/"}>медия</Link>
+                <Link href={"/"} onClick={handleCloseModal}>медия</Link>
               </li>
               <li>
-                <Link href={"/"}>кредиты</Link>
+                <Link href={"/"} onClick={handleCloseModal}>кредиты</Link>
               </li>
               <li>
-                <Link href={"/"}>вклады</Link>
+                <Link href={"/"} onClick={handleCloseModal}>вклады</Link>
               </li>
               <li>
-                <Link href={"/"}>мобильное приложение</Link>
+                <Link href={"/"} onClick={handleCloseModal}>мобильное приложение</Link>
               </li>
               <li>
-                <Link href={"/"}>карты</Link>
+                <Link href={"/"} onClick={handleCloseModal}>карты</Link>
               </li>
               <li>
-                <Link href={"/"}>переводы</Link>
+                <Link href={"/"} onClick={handleCloseModal}>переводы</Link>
               </li>
             </ul>
             <div className="header_modal_bottom">
