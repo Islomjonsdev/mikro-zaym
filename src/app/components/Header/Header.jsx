@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import headerLogo from "../../../../public/svg/headerLogo.svg";
 import "./Header.scss";
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
 
 const Header = () => {
-  const [ open, setOPen ] = useState(false)
+  const [open, setOPen] = useState(false);
   const sasa = () => {
-    setOPen((prev) => !prev)
-  }
+    setOPen((prev) => !prev);
+  };
   return (
     <header className="header">
       <div className="container">
@@ -29,28 +29,26 @@ const Header = () => {
             </div>
 
             <div className="header_top_right">
-                <ul>
-                  <li>
-                    <Link href={"/"}>для слабовидящих</Link>
-                  </li>
-                  <li>
-                    <Link href={"/langs"}>Курс валюта</Link>
-                  </li>
-                  <li>
-                    <Link href={"/"}>Банкоматы</Link>
-                  </li>
-                </ul>
-                <div onClick={() => sasa(true)}>
-                  <p>русский</p>
-                </div>
+              <ul>
+                <li>
+                  <Link href={"/"}>для слабовидящих</Link>
+                </li>
+                <li>
+                  <Link href={"/langs"}>Курс валюта</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>Банкоматы</Link>
+                </li>
+              </ul>
+              <div onClick={() => sasa(true)}>
+                <p>русский</p>
+              </div>
             </div>
           </div>
           <HeaderBottom />
         </div>
       </div>
-      {open && (
-        <div>salom</div>
-      )}
+      {open && <div>salom</div>}
     </header>
   );
 };
